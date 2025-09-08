@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ny Herin'ny Boky</title>
+  <meta name="description" content="Ny Herin'ny Boky" />
+  <link rel="stylesheet" href="style.css">
+
+  </head>
+<body>
+  <header>
+    <!-- LOGO + NOM BOUTIQUE -->
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo" id="siteLogo">
+      <h1>Ny Herin'ny Boky</h1>
+    </div>
+
+   
+  </header>
+    
+       <!-- BARRE DE RECHERCHE -->
+    <div class="search-bar">
+      <div class="search-bar-center">
+      <input type="text" id="searchInput" placeholder="Rechercher un produit...">
+      </div>
+    </div>
+  <main>
+    <section class="products" id="productList">
+      <!-- Produits chargés depuis Google Sheets -->
+    </section>
+  </main>
+
+  <aside class="cart" id="cart">
+    <h2>🛒 Mon Panier</h2>
+    <div id="cartItems"></div>
+    <button onclick="sendOrder()">Commander</button>
+  </aside>
+  <script src="script.js"></script>
+   <p style="font-size: 14;text-align:center;margin-bottom:300px;">-Vitrine by @Botika-</p>
+
+  </body>
+</html>
