@@ -31,8 +31,10 @@
           <div class="card-content">
             <h3>${prod.Titre}</h3>
             <p>${prod.Description || "" }</p>
+             <p><b>Auteur:</b>${prod.Auteur}</p>
             <p style=" color:green;"><b>Prix Original:${prod.PrixO} Ar</b></p>
             <p style=" color:red;"><b>Prix Reproduction:${prod.PrixR} Ar</b></p>
+            <p><b>Stocks:</b>${prod.Stocks}</p>
             <button onclick="addToCart('${prod.Titre}', '${prod.PrixO}')">Ajouter au panier</button>
           </div>
         `;
@@ -85,6 +87,7 @@
         window.open(`https://m.me/${MESSENGER_ID}?text=${message}`, "_blank");
       }
     }
+
 
 
     loadProducts();
