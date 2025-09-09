@@ -62,7 +62,7 @@
       cart.forEach((item, i) => {
         cartDiv.innerHTML += `
           <div class="cart-item">
-            <span>${item.name} (${item.price} Ar)</span>
+            <span>${item.name}</span>
             <a href="#" onclick="removeFromCart(${i})">Supprimer</a>
           </div>
         `;
@@ -91,5 +91,6 @@
 
 
     loadProducts();
+
 
 
