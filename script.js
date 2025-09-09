@@ -35,7 +35,7 @@
             <p style=" color:green;"><b>Prix Original:${prod.PrixO} Ar</b></p>
             <p style=" color:red;"><b>Prix Reproduction:${prod.PrixR} Ar</b></p>
             <p><b>Stocks:</b>${prod.Stocks}</p>
-            <button onclick="addToCart('${prod.Titre}', '${prod.PrixO}')">Ajouter au panier</button>
+            <button onclick="addToCart('-'+'${prod.Titre}', '${prod.PrixO}')">Ajouter au panier</button>
           </div>
         `;
         container.appendChild(card);
@@ -91,3 +91,4 @@
 
 
     loadProducts();
+
