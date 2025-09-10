@@ -48,7 +48,7 @@
     document.getElementById("searchInput").addEventListener("input", (e) => {
       const value = e.target.value.toLowerCase();
       const filtered = productsData.filter(prod =>
-        prod.Nom.toLowerCase().includes(value)
+        prod.Titre.toLowerCase().includes(value)
       );
       displayProducts(filtered);
     });
@@ -93,6 +93,7 @@
 
 
     loadProducts();
+
 
 
 
