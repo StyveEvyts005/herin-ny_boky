@@ -80,7 +80,7 @@
       if (cart.length === 0) return alert("Votre panier est vide !");
       let message = "Bonjour, je veux commander :%0A";
       cart.forEach(item => {
-        message += `- ${item.name} (${item.price} Ar)%0A`;
+        message += ` ${item.name} %0A`;
       });
 
       if (CONTACT_METHOD === "whatsapp") {
@@ -93,6 +93,7 @@
 
 
     loadProducts();
+
 
 
 
