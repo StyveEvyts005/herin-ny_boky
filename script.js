@@ -31,12 +31,12 @@
           <div class="card-content">
             <h3>${prod.Titre}</h3>
             <p>${prod.Description || "" }</p>
-             <p><b>Categorie:</b>${prod.Categorie}</p>
-             <p><b>Auteur:</b>${prod.Auteur}</p>
-            <p style=" color:green;"><b>Prix Original:${prod.PrixO} Ar</b></p>
-            <p style=" color:red;"><b>Prix Reproduction:${prod.PrixR} Ar</b></p>
-            <p><b>Stocks Original:</b>${prod.StocksORG}</p>
-             <p><b>Stocks Reproduction:</b>${prod.StocksRPD}</p>
+             <p><b>Categorie: </b>${prod.Categorie}</p>
+             <p><b>Auteur: </b>${prod.Auteur}</p>
+            <p style=" color:green;"><b>Prix Original: ${prod.PrixO} Ar</b></p>
+            <p style=" color:red;"><b>Prix Reproduction: ${prod.PrixR} Ar</b></p>
+            <p><b>Stocks Original: </b>${prod.StocksORG}</p>
+             <p><b>Stocks Reproduction: </b>${prod.StocksRPD}</p>
             <button onclick="addToCart('-'+'${prod.Titre}')">Ajouter au panier</button>
           </div>
         `;
@@ -93,6 +93,7 @@
 
 
     loadProducts();
+
 
 
 
